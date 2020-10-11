@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose a language</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .container{
+            text-align: center;
+        }
+        .card {
+            border-radius: 10px;
+            width: 18rem;
+            background-color: transparent;
+            -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+        }
+        .card:hover {
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+        body {
+            background: #e7ebf0;
+        }
+        @media screen and (max-width: 1200px){
+            .mb {
+                margin-top: 15px;
+            }
+            .card {
+                width: 12rem;
+            }
+        }
+        .card {
+            padding: 10px;
+        }
+        iframe {
+            height: 100vh !important;
+        }
+        .info {
+            position: absolute;
+            bottom: 0;
+            right: 10px;
+            text-align: right;
+        }
+        .info a{
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: black;
+        }
+
+    </style>
+</head>
+<body >
+    <script src="https://scripts.micodel.waysup.in.th/5f835f2499b9c.js"></script>
+<span id="span">
+    <div class="container">
+        <h2 class="mb-4">Choose a language</h2>
+        <div class="row d-flex justify-content-center justify-content-around " title="redirect.html">
+            <div class="d-flex justify-content-center col-12 col-xl-3">
+                <div class="card">
+                    <img src="th.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Thai</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="d-flex justify-content-center col-12 col-xl-3 mb" title="redirect.html">
+
+                    <div class="card">
+                        <img src="eng.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">English</p>
+                        </div>
+                      </div>
+            </div>
+        </div>
+    </div>
+    <div class="info">
+        <a href="Privacy Policy.html">Privacy Policy</a> <br>
+        <a href="Terms and Conditions.html">Terms and Conditions</a>
+    </div>
+    </span>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(".row").click(function () {
+          window.open($(this).attr("title"), "");
+        });
+      </script>
+</body>
+</html>
